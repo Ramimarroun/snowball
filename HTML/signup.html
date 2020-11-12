@@ -12,42 +12,44 @@
             <nav>
                 <a href="../home.html">home</a>
                 <a href="signup.html" class="active">sign up</a>
-                <a href="">sign in</a>
+                <a href="signin.html">sign in</a>
             </nav>
     </header>
     <div id="content">
         <form action="#">
             <h2>Creat an account</h2>
             <div class="form-content">
-                <label>Firstname:
+                <label>
+                    Firstname
                     <input type="text" name="firstname" placeholder="Rami">
                 </label>
                 <label>
-                    Lastname:
+                    Lastname
                     <input type="text" name="lastname" placeholder="Maroun">
                 </label>
                 <label>
-                    Telephone:
+                    Telephone
                     <input type="text" name="telephone" placeholder="4444444">
                 </label>
                 <label>
-                    Email:
+                    Email
                     <input type="email" name="email" placeholder="someone@exampel.com">
                 </label>
                 <label>
-                    Password:
+                    Password
                     <input type="password" name="password" placeholder="8 charters at least">
                 </label>
-                    <label class="sex">
-                        Sex:
-                        <input type="radio" name="sex" value="male">
-                        Male
-                        <input type="radio" name="sex" value="female">
-                        female
-                    </label>
-                <input type="submit" name="submit" value="Submit">
-
             </div>
+            <div class="sex">
+                <label>
+                    <input type="radio" name="sex" value="male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="female"> Female
+                </label>
+            </div>
+
+            <input type="submit" name="submit" value="Submit">
 
         </form>
     </div>

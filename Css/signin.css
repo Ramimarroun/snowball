@@ -57,9 +57,9 @@ nav a:hover{
     margin-top: 150px;
 }
 form{
-    width: 50%;
+    width: 80%;
     padding: 25px;
-    height: 500px;
+    height: 450px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
@@ -72,44 +72,35 @@ form h2{
     padding: 10px;
     top:-25px;
     box-shadow: 0 2px 16px 0 rgba(0,0,0,0.5);
-    left: 30%;
+    left: 40%;
     font-size: 20px;
 }
 .form-content label{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    padding: 15px;
+    width: 40vw;
+    padding: 20px;
+    margin-left: 100px;
 }
 .form-content label input{
-    width: 60%;
-}
-.sex{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 30%;
-}
-.sex label{
     padding: 20px;
+    width: 100%;
 }
 input[type=submit]{
     position: absolute;
-    width: 20%;
+    width: 30%;
     padding: 10px;
     border: none;
     background-color: #15181c;
     color: white;
     left: 40%;
-    top: 85%;
+    top: 65%;
 }
 .form-content{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    margin-right: 50px;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer{
@@ -133,20 +124,13 @@ footer{
     nav a{
         padding:30px 20px 30px 20px;
     }
-    form h2{
-        left: 30%;
-        font-size: 16px;
-    }
-    form {
-        width: 60%;
-    }
 }
 @media(max-width: 654px) {
     nav a{
         padding:30px 10px 30px 10px;
     }
-    form {
-        width: 80%;
+    .form-content label{
+        margin-left: 50px;
     }
 }
 @media(max-width: 531px) {
@@ -158,10 +142,6 @@ footer{
         width: 175px;
         margin-right: auto;
         margin-left: auto;
-    }
-    form h2{
-        left: 30%;
-        font-size: 16px;
     }
     #content{
         margin-top: 250px;
@@ -181,6 +161,12 @@ footer{
         margin-left: auto;
         margin-right: auto;
     }
+    .form-content label{
+        margin-left: 25px;
+    }
+    .form-content label input{
+        padding: 15px;
+    }
 }
 @media(max-width: 450px) {
     header p{
@@ -188,45 +174,8 @@ footer{
         margin-top: 10px;
         padding: 15px;
     }
+}
 
-    .form-content label{
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-    .form-content label input{
-        width: 250px;
-        padding: 10px;
-    }
-    form{
-        height: 600px;
-    }
-    .sex{
-        left: 20%;
-    }
-    .sex label{
-        padding: 4px;
-    }
-    input[type=submit]{
-        left: 30%;
-        width: 100px;
-    }
-}
-@media (max-width: 395px) {
-    .form-content label input{
-        width: 120%;
-    }
-}
-@media(max-width: 289px) {
-    form h2{
-        font-size: 14px;
-        left: 50px;
-        padding: 5px;
-    }
-    input[type=submit]{
-        left: 20%;
-    }
-}
 @media (max-width: 275px) {
     nav{
         grid-template-columns:repeat(1,1fr);
@@ -241,27 +190,25 @@ footer{
         padding: 5px;
         width: 30px;
     }
-    form{
-        width: 60%;
-        font-size: 10px;
+    .form-content label{
+        margin-left: 0;
+        padding: 15px;
+    }
+    .form-content label input{
+        padding: 10px;
     }
     form h2{
-        font-size: 12px;
-        left: 25px;
+        left: 50px;
+        font-size: 14px;
+        padding: 5px;
+    }
+    form{
+        width: 65%;
     }
     input[type=submit]{
-        width: 50px;
-        font-size: 10px;
-        left: 30%;
-    }
-    .form-content label input{
-        width: 100px;
-    }
-
-}
-@media (max-width: 235px) {
-    .form-content label input{
+        left: 35%;
         width: 75px;
+        top: 60%;
     }
 }
 @media (max-width: 200px) {
@@ -278,12 +225,10 @@ footer{
         padding: 5px;
         width: 30px;
     }
-    form h2{
-        left: 10px;
+    .form-content label{
+        padding: 2px;
     }
-    .form-content label input{
-        width: 60px;
-    }
+
 
 
 }
